@@ -1,0 +1,69 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-image: url('./baked-bread-1756061.jpg');
+    background-size: cover;
+}
+header{
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+nav {
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 8px;
+    list-style-type: none;
+}
+
+li {
+    margin: 2px;
+}
+li a{
+    color: white;
+    /* margin-left: 5px; */
+    padding-right: 19px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+.navBtn {
+    display: none;
+    background: none;
+    border-style: none;
+    border-color: none;
+}
+
+@media screen and (max-width: 600px) {
+    
+    header {
+        padding: 10px;
+    }
+    ul {
+        flex-direction: column;
+    }
+    nav{
+        padding-top: 7%;
+        display: none;
+        justify-content: center;
+    }
+    .navTerlihat {
+        display: flex;
+    }
+    .navBtn{
+        display: block;
+        padding: auto;
+        margin-left: 92%;
+        width: 8%;
+        font-size: 20px;
+    }
+}
